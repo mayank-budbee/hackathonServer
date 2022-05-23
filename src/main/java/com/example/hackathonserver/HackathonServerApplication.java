@@ -1,7 +1,9 @@
 package com.example.hackathonserver;
 
+import javax.sql.DataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -22,4 +24,16 @@ public class HackathonServerApplication {
             }
         };
     }
+
+//    @Bean
+//    public DataSource getDataSource() {
+//        DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
+//        dataSourceBuilder.driverClassName("com.mysql.jdbc.Driver");
+//        dataSourceBuilder.url("jdbc:mysql://localhost:3306/mayank");
+//        dataSourceBuilder.username("root");
+//        dataSourceBuilder.password("mkUKaFbsu_iKjyHvpfmaxU32");
+//        return dataSourceBuilder.build();
+//    }
+
+
 }
